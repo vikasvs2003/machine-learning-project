@@ -91,7 +91,7 @@ class TitanicLogisticAnalysis:
 
 
 def main():
-    print("--- Nikhil Ahir")
+    print("--- VIKAS BHONDE")
     print("Supervised machine learning")
     print("Logistic Regression on Titanic dataset")
 
