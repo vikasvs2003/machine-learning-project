@@ -49,7 +49,7 @@ class PlayPredictor:
         print("Predicted Play:", predicted)
 
 def main():
-    print("---- NIKhil ML by Nikhil Ahir ----")
+    print("---- VIKAS BHONDE----")
     print("Machine Learning Application")
     print("Play Predictor Application using K Nearest Neighbor Algorithm")
 
