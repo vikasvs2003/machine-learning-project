@@ -41,7 +41,7 @@ class WinePredictor:
         print("Predicted Class:", predicted)
 
 def main():
-    print("---- NIkhil ML by NIkhil Ahir ----")
+    print("---- VIKAS BHONDE  ----")
     print("Machine learning application")
     print("Wine predictor application using k-nearest neighbor algorithm")
 
