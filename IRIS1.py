@@ -42,7 +42,7 @@ class IrisSpeciesClassifier:
         plt.show()
 
 def main():
-    print("---- Marvellous Infosystem by Nikhil Ahir ----")
+    print("---- MACHINE LEARNING BY VIKAS ----")
     print("-- Iris Species classification using Decision Tree algorithm --")
 
     iris_classifier = IrisSpeciesClassifier()
