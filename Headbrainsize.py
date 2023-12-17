@@ -50,7 +50,7 @@ class HeadBrainSizePredictor:
         plt.show()
 
 def main():
-    print("---- Head Brain Size Predictor by Nikhil Ahir ----")
+    print("---- Head Brain Size Predictor by VIKAS BHONDE ----")
     print("Linear Regression Application")
     print("Head Brain Size Predictor using Linear Regression")
 
