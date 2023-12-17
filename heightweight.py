@@ -50,7 +50,7 @@ class HeightWeightPredictor:
         plt.show()
 
 def main():
-    print("---- Height Weight Predictor by NIkhil Ahir ----")
+    print("---- Height Weight Predictor by VIKAS BHONDE ----")
     print("Linear Regression Application")
     print("Height Weight Predictor using Linear Regression")
 
