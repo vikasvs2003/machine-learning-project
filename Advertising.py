@@ -24,7 +24,7 @@ class SalesPredictor:
         print("R-squared Score:", r2)
 
 def main():
-    print("---- NIkhil ML by Nikhil Ahir ---")
+    print("---- VIKAS BHONDE ML ---")
     print("Machine Learning Application")
     print("Sales Predictor using Linear Regression")
 
