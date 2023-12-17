@@ -23,8 +23,8 @@ class ProcessLogger:
 
     def mail_sender(self, filename, current_time):
         try:
-            fromaddr = "------@gmail.com"
-            toaddr = "-------@ymail.com"
+            fromaddr = "sender@gmail.com"
+            toaddr = "receiver@gmail.com"
 
             msg = MIMEMultipart()
 
@@ -33,18 +33,18 @@ class ProcessLogger:
 
             body = f"""
             Hello {toaddr},
-            Welcome to Nikhil ML.
+            Welcome to vikas project
             Please find attached document which contains Log of Running processes.
             Log file is created at: {current_time}
 
             This is an auto-generated mail.
 
             Thanks & Regards,
-            NIkhil Prakash Ahir
-            NIkhil ML
+            vikas bhonde
+            vikas ml
             """
 
-            subject = f"NIkhil ML Process log generated at: {current_time}"
+            subject = f"vikas ML Process log generated at: {current_time}"
 
             msg['Subject'] = subject
             msg.attach(MIMEText(body, 'plain'))
@@ -64,7 +64,7 @@ class ProcessLogger:
 
             s.starttls()
 
-            s.login(fromaddr, "--------")
+            s.login(fromaddr, "sender app password")
 
             text = msg.as_string()
 
@@ -77,7 +77,7 @@ class ProcessLogger:
         except Exception as E:
             print("Unable to send mail.", E)
 
-    def process_log(self, log_dir='NIkhil'):
+    def process_log(self, log_dir='Marvellous'):
         list_process = []
 
         if not os.path.exists(log_dir):
@@ -87,10 +87,11 @@ class ProcessLogger:
                 pass
 
         separator = "-" * 80
-        log_path = os.path.join(log_dir, f"MarvellousLog{time.ctime()}.log")
+        #log_path = os.path.join(log_dir, f"MarvellousLog{time.ctime()}.log")
+        log_path = os.path.join(log_dir, f"MarvellousLog{time.strftime('%Y-%m-%d_%H-%M-%S')}.log")
         f = open(log_path, 'w')
         f.write(separator + "\n")
-        f.write("NIkhil ML Process Logger : " + time.ctime() + "\n")
+        f.write("vikas ml Process Logger : " + time.ctime() + "\n")
         f.write(separator + "\n")
         f.write("\n")
 
@@ -121,7 +122,7 @@ class ProcessLogger:
 
 
 def main():
-    print("---- NIkhil ML by NIkhil Ahir-----")
+    print("---- vikass by vikas-----")
 
     print("Application name : " + argv[0])
 
