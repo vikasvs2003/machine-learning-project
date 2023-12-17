@@ -9,7 +9,7 @@ class DiabetesPredictor:
         self.diabetes = pd.read_csv(data_path)
 
     def display_information(self):
-        print("---- Nikhil ML by Nikhil Ahir ---")
+        print("---- ML by VIKAS BHONDE ---")
         print("-- Diabetes predictor using the Decision Tree ---")
 
         print("Columns of Dataset:")
@@ -55,7 +55,7 @@ class DiabetesPredictor:
 
 
 def main():
-    diabetes_predictor = DiabetesPredictor('C:/Users/NIKHIL/Desktop/python programs/machine learning/diabetes.csv')
+    diabetes_predictor = DiabetesPredictor('‪C:\Users\RAHUL\Desktop\python\ML\diabetes.csv')
     diabetes_predictor.display_information()
     diabetes_predictor.train_decision_tree(max_depth=3, random_state=0)
 
